@@ -23,6 +23,6 @@ The extension method DataSourceRequest.GetPagedData<T>() will translate the Tele
     		ModelState.AddModelError(string.Empty, ex.GetBaseException().Message);
 
     		return Json(new List<Model> { new Model() }.ToDataSourceResult(request, 
-    		ModelState), JsonRequestBehavior.AllowGet);
+    		    ModelState), JsonRequestBehavior.AllowGet);
     	}
     }
