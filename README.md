@@ -15,7 +15,8 @@ The extension method DataSourceRequest.GetPagedData<T>() will translate the Tele
     	{
     		var collection = MongoDB.GetMongoCollection<Model>("CollectionName");
     
-    		return Json(await request.GetPagedData<Model>(collection), JsonRequestBehavior.AllowGet);
+    		return Json(await request.GetPagedData<Model>(collection), 
+                JsonRequestBehavior.AllowGet);
     	}
     	catch (Exception ex)
     	{
