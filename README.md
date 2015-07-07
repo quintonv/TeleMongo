@@ -3,11 +3,6 @@ This is a small extension that I started writing to support Mongo from the Teler
 
 The extension method DataSourceRequest.GetPagedData<T>() will translate the Telerik DataSourceRequest object from a DataGrid into a Mongo FluentAPI query and then execute it.
 
-# TeleMongo
-This is a small extension that I started writing to support Mongo from the Telerik DataSourceRequest object.
-
-The extension method DataSourceRequest.GetPagedData<T>() will translate the Telerik DataSourceRequest object from a DataGrid into a Mongo FluentAPI query and then execute it.
-
     //Sample Code
     public async Task<ActionResult> ReadSomeData([DataSourceRequest]DataSourceRequest request)
     {
